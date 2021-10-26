@@ -31,6 +31,11 @@ const Main = () => {
                 <input type="text" id="inpt" />
                 <button type="submit" onClick={MakeItShort}>Shorten</button>
                 <p><a href={Shorterlink}>{Shorterlink}</a></p>
+                <button
+                    onClick={() => navigator.clipboard.writeText(Shorterlink)}
+                >
+                    Copy
+                </button>
             </form>
         </div>
     );
