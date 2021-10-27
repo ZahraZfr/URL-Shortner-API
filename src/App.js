@@ -1,20 +1,19 @@
-import './App.css';
+
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer'
+import GlobalStyles from './components/styles/global';
 
-// import { MyContext } from "./components/MyContext";
 
 function App() {
   return (
-    // <MyContext.Provider>
-    <div className="app">
+    <>
+      <GlobalStyles />
       <Header />
       <Main />
       <Footer />
-    </div>
 
-    // </MyContext.Provider>
+    </>
   );
 }
 

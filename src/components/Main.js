@@ -1,10 +1,13 @@
 import { useState } from "react";
 import axios from "axios"
+import URL from '../URL.jpg';
+import { MainHolder } from './styles/Main.style'
 
 const Main = () => {
     let userInput;
     const [Shorterlink, setShorterLink] = useState("");
     const objLink = { long_link: userInput }
+    const [showMsg, setShowMsg] = useState("")
 
     // function run we user click
     function MakeItShort(e) {
@@ -26,18 +29,27 @@ const Main = () => {
     }
 
     return (
-        <div>
+        <MainHolder>
+
             <form action="">
-                <input type="text" id="inpt" />
-                <button type="submit" onClick={MakeItShort}>Shorten</button>
-                <p><a href={Shorterlink}>{Shorterlink}</a></p>
-                <button
-                    onClick={() => navigator.clipboard.writeText(Shorterlink)}
-                >
-                    Copy
-                </button>
+                <div>
+                    <input type="text" id="inpt" placeholder="Your URL" />
+                    <button type="submit" onClick={MakeItShort}>Shorten</button>
+                </div>
+                <section>
+                    <p><a href={Shorterlink}>{Shorterlink}</a></p>
+                    <button
+                        onClick={() => {
+                            navigator.clipboard.writeText(Shorterlink) && setShowMsg("Copy the shortened link and share it in messages, texts, posts, websites and other locations.")
+                        }}
+                    >
+                        Copy
+                    </button>
+                    <h6>{showMsg}</h6>
+                </section>
             </form>
-        </div>
+            <img src={URL} alt="" />
+        </MainHolder>
     );
 }
 
