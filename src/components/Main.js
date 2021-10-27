@@ -32,6 +32,8 @@ const Main = () => {
         <MainHolder>
 
             <form action="">
+                <h1>URL shortener service</h1>
+                <h5>When the shorter, the better :)</h5>
                 <div>
                     <input type="text" id="inpt" placeholder="Your URL" />
                     <button type="submit" onClick={MakeItShort}>Shorten</button>
@@ -45,7 +47,6 @@ const Main = () => {
                     >
                         Copy
                     </button>
-                    <h6>{showMsg}</h6>
                 </section>
             </form>
             <img src={URL} alt="" />

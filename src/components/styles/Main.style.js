@@ -35,15 +35,19 @@ export const MainHolder = styled.div`
 
         section{
             display:flex;
-            margin:15px;
+            margin:30px;
+            height:50px;
+            line-height:50px;
             
 
             p{
                 flex:1;
-                height:15px;
+                height:30px;
+                margin:0;
             }
             button{
-                width:25%
+                height:30px;
+                width:80px;
             }
         }
     }
