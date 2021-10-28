@@ -15,6 +15,7 @@ export const MainHolder = styled.div`
     form{
         width:50%;
         padding-top:100px;
+        font-family: 'Source Sans Pro', sans-serif;
 
         div{
             display:flex;
@@ -22,14 +23,33 @@ export const MainHolder = styled.div`
             input{
                 flex:1;
                 height:50px;
-                padding:0 5px;
+                padding:0 3px 0 7px;
+                margin-right:5px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                border:none;
+                outline:none;
+                box-shadow: 2px 2px 5px rgb(0,0,0,.3);
 
             }
             button{
-                width:15%
+                width:15%;
+                border:none;
+                outline:none;
+                background-color: rgb(254,200,2);
+                box-shadow: 2px 2px 5px rgb(0,0,0,.3);
+                font-weight:900;
+                color:rgb(44,68,78);
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size:18px;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.02);
+                    box-shadow: 2px 2px 5px rgb(0,0,0,.53);
+                    
+                }
             }
         }
 
@@ -44,10 +64,24 @@ export const MainHolder = styled.div`
                 flex:1;
                 height:30px;
                 margin:0;
+                
             }
             button{
                 height:30px;
                 width:80px;
+                border:none;
+                outline:none;
+                background-color: rgb(44,68,78);
+                color:rgb(254,200,2);;
+                box-shadow: 2px 2px 5px rgb(0,0,0,.3);
+                font-weight:700;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.02);
+                    box-shadow: 2px 2px 5px rgb(0,0,0,.53);
+                }
+               
             }
         }
     }
