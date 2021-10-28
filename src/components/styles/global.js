@@ -5,6 +5,8 @@ const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
   }
 
   body {
@@ -12,10 +14,10 @@ const GlobalStyles = createGlobalStyle`
     color: hsl(192, 100%, 9%);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.15em;
-    margin: 0;
     display : flex;
     align-item:center;
     justify-content:center;
+    height:100vh;
   }
 
   p {

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axios from "axios"
-import URL from '../URL.jpg';
+import URL from '../URL.png';
 import { MainHolder } from './styles/Main.style'
+
 
 const Main = () => {
     let userInput;
@@ -26,6 +27,8 @@ const Main = () => {
                 setShorterLink(`http://localhost:3000/links/${res.data.shortLink}`);
             })
             .catch();
+            setShowMsg("Copy the shortened link and share it in messages, texts, posts, websites and other locations.");
+            
     }
 
     return (
@@ -33,21 +36,25 @@ const Main = () => {
 
             <form action="">
                 <h1>URL shortener service</h1>
-                <h5>When the shorter, the better :)</h5>
+                <h3>When the shorter, the better :)</h3>
                 <div>
                     <input type="text" id="inpt" placeholder="Your URL" />
                     <button type="submit" onClick={MakeItShort}>Shorten</button>
                 </div>
                 <section>
-                    <p><a href={Shorterlink}>{Shorterlink}</a></p>
+                    <div>
+                        <h5>{showMsg}</h5>
+                        <p><a href={Shorterlink} target='_blank'>{Shorterlink}</a></p>
+                    </div>
                     <button
                         onClick={() => {
-                            navigator.clipboard.writeText(Shorterlink) && setShowMsg("Copy the shortened link and share it in messages, texts, posts, websites and other locations.")
+                            navigator.clipboard.writeText(Shorterlink) 
                         }}
                     >
                         Copy
                     </button>
                 </section>
+
             </form>
             <img src={URL} alt="" />
         </MainHolder>

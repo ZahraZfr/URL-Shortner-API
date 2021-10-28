@@ -17,6 +17,20 @@ export const MainHolder = styled.div`
         padding-top:100px;
         font-family: 'Source Sans Pro', sans-serif;
 
+
+        h1{
+            color:rgb(44,68,78);
+            font-size:3.65rem;
+            font-weight:800;
+            text-align:left;
+        }
+        h3{
+            color:rgb(44,68,78);
+            text-align:left;
+            padding-left:20px;
+            margin-bottom:50px;
+        }
+
         div{
             display:flex;
 
@@ -54,27 +68,51 @@ export const MainHolder = styled.div`
         }
 
         section{
+            height:70px;
+            text-align:center;
             display:flex;
+            align-items:center;
+            padding:12px;
             margin:30px;
-            height:50px;
-            line-height:50px;
+            box-shadow: 2px 2px 5px rgb(0,0,0,.23);
+       
             
 
-            p{
-                flex:1;
-                height:30px;
-                margin:0;
+            div{
+                display:flex;
+                align-items:start;
+                padding:15px 0;
+                width:100%;
+                flex-direction:column;
+
+                h5{
+                    font-size:13px;
+                    color:rgb(44,68,78);
+                }
+
+                p{
+                    flex:1;
+                    height:30px;
+                    margin:1px 0;
+                    
+                }
                 
+    
             }
+
+           
             button{
                 height:30px;
+                line-height:30px;
                 width:80px;
                 border:none;
                 outline:none;
                 background-color: rgb(44,68,78);
-                color:rgb(254,200,2);;
+                color:rgb(254,200,2);
                 box-shadow: 2px 2px 5px rgb(0,0,0,.3);
                 font-weight:700;
+                text-align:center;
+                border-radius:15px;
 
                 &:hover{
                     cursor: pointer;
