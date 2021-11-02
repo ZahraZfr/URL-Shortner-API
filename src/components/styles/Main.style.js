@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const MainHolder = styled.div`
+@media only screen and (max-width: 1228px) {
+    background-color:red;
+  }
+
+
     text-align: center;
     color: palevioletred;
     display:flex;
@@ -20,9 +25,11 @@ export const MainHolder = styled.div`
 
         h1{
             color:rgb(44,68,78);
-            font-size:3.65rem;
+            font-size:3.5rem;
             font-weight:800;
+            line-height:50px;
             text-align:left;
+            margin-bottom:20px;
         }
         h3{
             color:rgb(44,68,78);
@@ -86,7 +93,7 @@ export const MainHolder = styled.div`
                 flex-direction:column;
 
                 h5{
-                    font-size:13px;
+                    font-size:13.5px;
                     color:rgb(44,68,78);
                 }
 

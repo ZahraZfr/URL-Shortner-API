@@ -8,7 +8,7 @@ const Main = () => {
     let userInput;
     const [Shorterlink, setShorterLink] = useState("");
     const objLink = { long_link: userInput }
-    const [showMsg, setShowMsg] = useState("")
+    const [showMsg, setShowMsg] = useState("No result ! Haven't you shortened your link yet ??!");
 
     // function run we user click
     function MakeItShort(e) {
