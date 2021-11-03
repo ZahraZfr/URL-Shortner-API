@@ -41,6 +41,7 @@ a{
         margin-right:10px;
     }
 }
-
-
+@media only screen and (min-width: 668px) {
+    display:none;
+}
 `

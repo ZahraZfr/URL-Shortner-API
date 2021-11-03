@@ -50,29 +50,28 @@ export const Wrapper = styled.section`
 
 
 
-    @media only screen and (max-width: 1200px) {
-       a{
-        padding:2.5px 9.5px;
-        margin:6.5px 11.5px;
-       }
+    // @media only screen and (max-width: 1200px) {
+    //    a{
+    //     padding:2.5px 9.5px;
+    //     margin:6.5px 11.5px;
+    //    }
 
-       img{
-        width:12px;
-        margin:2px px 0 0;
-       }
-      }
+    //    img{
+    //     width:12px;
+    //     margin:2px px 0 0;
+    //    }
+    //   }
 
       @media only screen and (max-width: 668px) {
         a{
-        //  padding:1px 7px;
-        //  margin:2px 5px;
-        //  font-size:12px;
         display:none;
-        }
+
         img{
-         width:12px !important;
-         margin:1px px 0 0;
+            width:12px;
+            margin:1px px 0 0;
+           }
         }
+        
        }
 
 `;

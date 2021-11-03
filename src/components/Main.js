@@ -8,7 +8,7 @@ const Main = () => {
     let userInput;
     const [Shorterlink, setShorterLink] = useState("");
     const objLink = { long_link: userInput }
-    const [showMsg, setShowMsg] = useState("No result ! Haven't you shortened your link yet ??!");
+    const [showMsg, setShowMsg] = useState("No result ! Haven't you shortened your link yet ?!");
 
     // function run we user click
     function MakeItShort(e) {
@@ -27,8 +27,14 @@ const Main = () => {
                 setShorterLink(`http://localhost:3000/links/${res.data.shortLink}`);
             })
             .catch();
+
+        if (userInput === "") {
+            setShowMsg("No result ! Haven't you shortened your link yet ?!")
+        } else {
             setShowMsg("Copy the shortened link and share it in messages, texts, posts, websites and other locations.");
-            
+        }
+
+
     }
 
     return (
@@ -48,7 +54,7 @@ const Main = () => {
                     </div>
                     <button
                         onClick={() => {
-                            navigator.clipboard.writeText(Shorterlink) 
+                            navigator.clipboard.writeText(Shorterlink)
                         }}
                     >
                         Copy

@@ -159,6 +159,7 @@ export const MainHolder = styled.div`
             section{
                 flex-direction:column;
                 height:auto;
+                margin-bottom:100px;
                 button{
                     width:30%
                 }
@@ -168,5 +169,27 @@ export const MainHolder = styled.div`
             max-width: 80% !important;
             margin-top:-50px
         }
+      }
+
+
+
+
+      @media only screen and (max-width: 668px) {
+          img{
+              margin-top:-50px;
+          }
+          form{
+              width:90%;
+              h1{
+                  font-size:35px
+              }
+              section{
+                margin:50px auto 100px;
+                width:90%;
+                button{
+                    width:50%
+                }
+            }
+          }
       }
 `;

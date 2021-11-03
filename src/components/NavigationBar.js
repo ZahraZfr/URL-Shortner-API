@@ -12,7 +12,7 @@ const NavigationBar = () => {
         left:"20px"
         
     }
-    const [showMwnu, setShowMenu] = useState('false');
+    const [showMwnu, setShowMenu] = useState(false);
     let menuTab;
     if (showMwnu) {
         menuTab = <NavPanel>
