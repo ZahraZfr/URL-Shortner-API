@@ -44,7 +44,7 @@ const Main = () => {
                 <section>
                     <div>
                         <h5>{showMsg}</h5>
-                        <p><a href={Shorterlink} target='_blank'>{Shorterlink}</a></p>
+                        <p><a href={Shorterlink}>{Shorterlink}</a></p>
                     </div>
                     <button
                         onClick={() => {

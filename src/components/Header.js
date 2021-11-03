@@ -2,12 +2,16 @@ import { Wrapper } from './styles/Header.style'
 import group from '../group.png';
 import contract from '../contract.png';
 import telephone from '../telephone.png';
+import NavigationBar from './NavigationBar'
 
 const Header = () => {
+
     return (
         <>
+            <NavigationBar />
             <Wrapper>
-                <div>
+
+                <div className='headerMenu'>
                     <a href="/">
                         <img src={group} alt="" />  about team</a>
                     <a href="/">

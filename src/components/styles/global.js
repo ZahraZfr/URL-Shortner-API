@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     align-item:center;
     justify-content:center;
     height:100vh;
+    min-width:330px
   }
 
   p {
@@ -25,7 +26,12 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
   }
 
-  
+  @media only screen and (min-width: 668px) {
+    svg{
+        display:none;
+    }
+    
+}
 `
 
 export default GlobalStyles

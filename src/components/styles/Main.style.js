@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
 export const MainHolder = styled.div`
-@media only screen and (max-width: 1228px) {
-    background-color:red;
-  }
-
-
     text-align: center;
     color: palevioletred;
     display:flex;
     justify-content:space-between;
-    align-item:center;
+    align-items:center;
     margin:0 3em;
 
     img {
@@ -64,6 +59,7 @@ export const MainHolder = styled.div`
                 color:rgb(44,68,78);
                 font-family: 'Source Sans Pro', sans-serif;
                 font-size:18px;
+                transition:all 0.3s;
 
                 &:hover{
                     cursor: pointer;
@@ -120,6 +116,7 @@ export const MainHolder = styled.div`
                 font-weight:700;
                 text-align:center;
                 border-radius:15px;
+                transition:all 0.3s;
 
                 &:hover{
                     cursor: pointer;
@@ -131,4 +128,45 @@ export const MainHolder = styled.div`
         }
     }
 
+
+    @media only screen and (max-width: 1200px) {
+        flex-direction:column;
+        form{
+            order:2;
+            width:80%;
+            justify-content:space-between;
+            padding:0;
+
+            h1{
+                font-size:45px;
+            }
+            div{
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+
+                input{
+                    width:90% !important;
+                    margin:0 auto 15px !important;
+                    padding: 20px 8px !important;
+                }
+    
+                button{
+                    width:90% !important;
+                    padding:4px ;
+                }
+            }
+            section{
+                flex-direction:column;
+                height:auto;
+                button{
+                    width:30%
+                }
+            }
+        }
+        img {
+            max-width: 80% !important;
+            margin-top:-50px
+        }
+      }
 `;
