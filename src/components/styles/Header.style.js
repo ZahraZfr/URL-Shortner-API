@@ -8,7 +8,7 @@ export const Title = styled.h1`
 `;
 
 export const Wrapper = styled.section`
-    background: #fff;
+    background:${({ theme }) => theme.body};
     height:60px;
     display: flex;
     align-items: center;
