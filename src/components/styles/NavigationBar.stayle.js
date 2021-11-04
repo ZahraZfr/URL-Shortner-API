@@ -2,18 +2,17 @@ import styled from "styled-components";
 
 export const NavPanel = styled.div`
 transition:all 0.3s;
-padding:50px;
+padding: 100px 50px;
 width:100%;
 height:100% !important;
-z-index:5;
+z-index:11;
 position:fixed;
 top:0;
 bottom:0;
 right:0;
 left:0;
-background-color:white;
+background:${({ theme }) => theme.body};
 color:white;
-overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:start;
@@ -29,8 +28,9 @@ a{
     height:auto;
     align-item:center;
     text-decoration:none;
-    color:rgb(44,68,78);
+    color:${({ theme }) => theme.text};
     transition:all 0.3s;
+    
 
     &:hover{
         box-sizing:border-box;

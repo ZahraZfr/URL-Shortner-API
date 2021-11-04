@@ -4,6 +4,7 @@ import contract from '../contract.png';
 import telephone from '../telephone.png';
 import NavigationBar from './NavigationBar'
 
+
 const Header = () => {
 
     return (
@@ -20,6 +21,7 @@ const Header = () => {
                         <img src={telephone} alt="" />contact us</a>
                 </div>
             </Wrapper>
+
         </>
 
     );

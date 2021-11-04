@@ -27,10 +27,10 @@ const NavigationBar = () => {
     }
     return (
         <div id="humIcon" style={humStyled} onClick={() => setShowMenu(!showMwnu)}>
-            <svg viewBox="0 0 100 80" width="30" height="30" z-index="11" >
-                <rect width="100" height="20"></rect>
-                <rect y="30" width="100" height="20"></rect>
-                <rect y="60" width="100" height="20"></rect>
+            <svg viewBox="0 0 100 80" width="22" height="22" >
+                <rect width="80" height="10"></rect>
+                <rect y="30" width="80" height="10"></rect>
+                <rect y="60" width="80" height="10"></rect>
             </svg>
             {menuTab}
         </div>

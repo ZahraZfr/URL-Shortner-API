@@ -19,7 +19,7 @@ export const MainHolder = styled.div`
 
 
         h1{
-            color:rgb(44,68,78);
+            color:${({ theme }) => theme.text};
             font-size:3.5rem;
             font-weight:800;
             line-height:50px;
@@ -27,7 +27,7 @@ export const MainHolder = styled.div`
             margin-bottom:20px;
         }
         h3{
-            color:rgb(44,68,78);
+            color:${({ theme }) => theme.text};
             text-align:left;
             padding-left:20px;
             margin-bottom:50px;
@@ -46,7 +46,7 @@ export const MainHolder = styled.div`
                 white-space: nowrap;
                 border:none;
                 outline:none;
-                box-shadow: 2px 2px 5px rgb(0,0,0,.3);
+                box-shadow: 2px 2px 5px rgb(0,0,0,.4);
 
             }
             button{
@@ -77,7 +77,7 @@ export const MainHolder = styled.div`
             align-items:center;
             padding:12px;
             margin:30px;
-            box-shadow: 2px 2px 5px rgb(0,0,0,.23);
+            box-shadow: 2px 2px 5px rgb(0,0,0,.4);
        
             
 
@@ -90,7 +90,7 @@ export const MainHolder = styled.div`
 
                 h5{
                     font-size:13.5px;
-                    color:rgb(44,68,78);
+                    color:${({ theme }) => theme.text};
                 }
 
                 p{
@@ -159,7 +159,7 @@ export const MainHolder = styled.div`
             section{
                 flex-direction:column;
                 height:auto;
-                margin-bottom:100px;
+                margin-bottom:200px;
                 button{
                     width:30%
                 }

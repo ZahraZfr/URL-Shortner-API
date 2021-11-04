@@ -8,7 +8,7 @@ export const Title = styled.h1`
 `;
 
 export const Wrapper = styled.section`
-    background: #fff;
+    background:${({ theme }) => theme.body};
     height:60px;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ export const Wrapper = styled.section`
        text-decoration:none;
        margin:10px 15px;
        cursor:poiner;
-       transition:all 0.2s ease;
+       transition:all 0.3s linear;
        text-shadow: 0.5px 0.5px 2px #e1e3e6;
        box-shadow: 1px 1.5px 2px 0.5px #d4d4d4;
        padding-bottom:4px;
