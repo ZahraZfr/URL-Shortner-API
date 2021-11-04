@@ -63,15 +63,22 @@ span {
   position:absolute;
   top:50px;
   right:50px;
-  width: 47px;
+  width: 52px;
   height: 25px;
 }
-
+@media only screen and (max-width:668px){
+  .container {
+    position:fixed;
+    top:10px;
+    right:30px;
+  }
+}
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 14px;
+ 
 }
 
 
@@ -91,6 +98,7 @@ span {
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+
 }
 
 .slider:before {
