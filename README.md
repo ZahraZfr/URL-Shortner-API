@@ -21,7 +21,7 @@ yarn start
 ## screenshot
 this project design in two mode : lite and dark;
 - for desktop
-![App Screenshot](./src/desktop-light.png)
+![App Screenshot](./desktop-light.png)
 
 
 ## Usage
