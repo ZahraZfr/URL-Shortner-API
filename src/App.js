@@ -7,24 +7,6 @@ import { GlobalStyles } from './components/global';
 import React, { useState } from 'react';
 import NavigationBar from './components/NavigationBar';
 
-// const LightTheme = {
-//   pageBackground: "white",
-//   titleColor: "#dc658b",
-//   tagLineColor: "black"
-// };
-
-// const DarkTheme = {
-//   pageBackground: "#282c36",
-//   titleColor: "lightpink",
-//   tagLineColor: "lavender"
-// }
-
-// const themes = {
-//   light: LightTheme,
-//   dark: DarkTheme,
-// }
-
-
 function App() {
   const [theme, setTheme] = useState('light');
 // The function that toggles between themes
