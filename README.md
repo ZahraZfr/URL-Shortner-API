@@ -21,18 +21,31 @@ yarn start
 ## screenshot
 this project design in two mode : lite and dark;
 - for desktop 
+
 light mode
+
 ![App Screenshot](./desktop-light.png)
+
 dark mode
+
 ![App Screenshot](./desktop-light.png)
+
+
 - for tablet 
+
 light mode 
 ![App Screenshot](./tablet-light.png)
+
 dark mode
 ![App Screenshot](./tablet-dark.png)
+
 - for mobile
+
+
 light mode
+
 ![App Screenshot](./mobile-light.png)
+
 dark mode
 ![App Screenshot](./mobile-dark.png)
 
