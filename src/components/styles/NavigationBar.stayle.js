@@ -13,7 +13,6 @@ right:0;
 left:0;
 background-color:white;
 color:white;
-overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:start;

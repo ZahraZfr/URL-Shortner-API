@@ -159,7 +159,7 @@ export const MainHolder = styled.div`
             section{
                 flex-direction:column;
                 height:auto;
-                margin-bottom:100px;
+                margin-bottom:200px;
                 button{
                     width:30%
                 }
