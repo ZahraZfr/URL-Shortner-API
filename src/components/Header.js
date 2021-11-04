@@ -21,7 +21,7 @@ const Header = () => {
                         <img src={telephone} alt="" />contact us</a>
                 </div>
             </Wrapper>
-            
+
         </>
 
     );
