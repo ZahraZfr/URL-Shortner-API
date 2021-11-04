@@ -1,10 +1,14 @@
 import { useState } from "react";
 import axios from "axios"
+import URL from '../URL.png';
+import { MainHolder } from './styles/Main.style'
+
 
 const Main = () => {
     let userInput;
     const [Shorterlink, setShorterLink] = useState("");
     const objLink = { long_link: userInput }
+    const [showMsg, setShowMsg] = useState("No result ! Haven't you shortened your link yet ?!");
 
     // function run we user click
     function MakeItShort(e) {
@@ -23,16 +27,43 @@ const Main = () => {
                 setShorterLink(`http://localhost:3000/links/${res.data.shortLink}`);
             })
             .catch();
+
+        if (userInput === "") {
+            setShowMsg("No result ! Haven't you shortened your link yet ?!")
+        } else {
+            setShowMsg("Copy the shortened link and share it in messages, texts, posts, websites and other locations.");
+        }
+
+
     }
 
     return (
-        <div>
+        <MainHolder>
+
             <form action="">
-                <input type="text" id="inpt" />
-                <button type="submit" onClick={MakeItShort}>Shorten</button>
-                <p><a href={Shorterlink}>{Shorterlink}</a></p>
+                <h1>URL shortener service</h1>
+                <h3>When the shorter, the better :)</h3>
+                <div>
+                    <input type="text" id="inpt" placeholder="Your URL" />
+                    <button type="submit" onClick={MakeItShort}>Shorten</button>
+                </div>
+                <section>
+                    <div>
+                        <h5>{showMsg}</h5>
+                        <p><a href={Shorterlink}>{Shorterlink}</a></p>
+                    </div>
+                    <button
+                        onClick={() => {
+                            navigator.clipboard.writeText(Shorterlink)
+                        }}
+                    >
+                        Copy
+                    </button>
+                </section>
+
             </form>
-        </div>
+            <img src={URL} alt="" />
+        </MainHolder>
     );
 }
 
