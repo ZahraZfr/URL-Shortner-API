@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    transition: all 0.25s linear;
+    transition: all 0.3s linear;
 
     .themeBTN{
       position:fixed;
@@ -29,7 +29,10 @@ export const GlobalStyles = createGlobalStyle`
       border-radius:10px;
       border:none;
       box-shadow: 1px 1.5px 2px 0.5px #d4d4d4;
-      background-color:#fafafa;
+      background:${({ theme }) => theme.body};
+      color:rgb(254,200,2);
+      font-size:17px;
+      text-shadow: 1px 1px 2px rgb(0,0,0,.4);
     }
     .themeBTN:hover{
       border-bottom:3.2px solid rgb(254,200,2);

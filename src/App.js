@@ -27,7 +27,6 @@ import NavigationBar from './components/NavigationBar';
 
 function App() {
   const [theme, setTheme] = useState('light');
-
 // The function that toggles between themes
 const toggleTheme = () => {
   // if the theme is not light, then set it to dark
@@ -44,7 +43,7 @@ const toggleTheme = () => {
       <GlobalStyles />
       <Header />
       <NavigationBar/>
-      <button className='themeBTN' onClick={toggleTheme}> ☀︎ / ☽ </button>
+      <button className='themeBTN' onClick={toggleTheme}> ☀︎  /  ☽ </button>
       <Main />
       <Footer />
 
