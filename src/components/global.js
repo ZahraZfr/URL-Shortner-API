@@ -29,7 +29,6 @@ export const GlobalStyles = createGlobalStyle`
       border-radius:10px;
       border:none;
       box-shadow: 1px 1.5px 2px 0.5px #d4d4d4;
-      background:${({ theme }) => theme.body};
       color:rgb(254,200,2);
       font-size:17px;
       text-shadow: 1px 1px 2px rgb(0,0,0,.4);
